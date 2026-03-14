@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+@mixin manrope($weight: 400, $size: 18px, $style: normal) {
+  font-family: $font-main;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin flex-col() {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-center-xy() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-center-y() {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-center-x() {
+  display: flex;
+  justify-content: center;
+}

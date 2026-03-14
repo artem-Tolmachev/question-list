@@ -1,0 +1,18 @@
+@use '../../../../shared/styles/variables.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+
+.filters-skeleton{
+    @include flex-col();
+    gap: $space-md-2;
+
+    &__block{
+        @include flex-col();
+        gap: $space-xs-4;
+    }
+    
+    &__inner{
+        display: flex;
+        gap: $space-xs-4;
+        flex-wrap: wrap;
+    }
+}

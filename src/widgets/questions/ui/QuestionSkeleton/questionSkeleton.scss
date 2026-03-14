@@ -1,0 +1,11 @@
+@use '../../../../shared/styles/variables.scss' as *;
+
+.questions-skeleton{
+    padding: $space-md-2;
+    box-shadow: 0px 4px 10px 0px #6A63761A;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+}

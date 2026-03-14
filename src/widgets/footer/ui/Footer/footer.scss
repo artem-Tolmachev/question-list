@@ -1,0 +1,51 @@
+@use '../../../../shared/styles/global.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+@use '../../../../shared/styles/variables.scss' as *;
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-top: $space-lg;
+    padding-bottom: $space-md;
+    border-top-right-radius: $space-md;
+    border-top-left-radius: $space-md;
+    background-color: var(--bg-primary);
+
+    &__text{
+        margin-top: $space-lg;
+        line-height: 127%;
+        color: var(--color-white);
+        @include  manrope(400, $font-md);
+    }
+    &__descr{
+        margin-top: $space-sm-3;
+        line-height: 127%;
+        color: var(--color-text-prime);
+        @include  manrope(400, $font-xs);
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        padding-top: $font-lg;
+        border-top: 1px solid #E6E6E61A;
+    }
+    &__copy{
+         line-height: 127%;
+        color: var(--color-text-prime);
+        @include  manrope(400, $font-sm);
+    }
+    &__socials{
+        gap: $space-xs-4;
+        @include flex-center-y();
+        &-links{
+            display: flex;
+            gap: $space-xs-4;
+        }
+        &-text{
+        line-height: 127%;
+        color: var(--color-text-prime);
+        @include  manrope(400, $font-sm)
+        }
+    }
+}

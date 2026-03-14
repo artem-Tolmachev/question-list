@@ -1,0 +1,16 @@
+@use '../../../../shared/styles/global.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+@use '../../../../shared/styles/variables.scss' as *;
+
+.show-more{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    line-height: 100%;
+    transition: hover .3s ease-in-out;
+    cursor: pointer;
+    @include manrope(500, $font-sm);
+}
+.show-more:hover{
+    color: var(--color-primary);
+    text-decoration: underline;
+}

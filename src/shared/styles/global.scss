@@ -1,0 +1,21 @@
+ul, li {
+  list-style: none;
+  margin: 0;       
+  padding: 0;  
+}
+a {
+  color: inherit;       
+  text-decoration: none; 
+  cursor: pointer;       
+}
+button{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.container{
+  display: flex;
+  max-width: 1216px;
+  min-width: 1216px;
+}

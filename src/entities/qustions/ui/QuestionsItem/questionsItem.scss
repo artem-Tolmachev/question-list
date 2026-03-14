@@ -1,0 +1,43 @@
+@use '../../../../shared/styles//mixins.scss'  as *;
+@use '../../../../shared/styles/variables.scss'  as *;
+
+.question{
+    padding: $space-md-2;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px 0px #6A63761A;
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+        background-color: var(--color-white);
+        cursor: pointer;
+    }
+    &__text{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        color: var(--color-black);
+        @include manrope(500, $font-2xl);
+    }
+    &__text::before{
+        display: inline-block;
+        margin-right: $space-xs-4;
+        content: '';
+        width: 8px;
+        height: 8px;
+        min-width: 8px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+    }
+    &__content{
+        display: flex;
+    }
+    &__btn--mrg{
+        margin-bottom: 24px;
+    }
+}
+
+

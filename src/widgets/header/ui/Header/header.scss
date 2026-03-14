@@ -1,0 +1,50 @@
+@use '../../../../shared/styles/variables.scss'  as *;
+@use '../../../../shared/styles/global.scss'  as *;
+
+.header{
+    padding: $space-sm-3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__container{
+        justify-content: space-between;
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: $space-md;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+    }
+    &__links{
+        display: flex;
+        gap: $space-md;
+    }
+    &__link{
+        padding: $space-xs-3 $space-sm;
+        display: flex;
+        align-items: center;
+
+        border-radius: 12px;
+        min-height: 38px;
+        color: var(--color-black);       
+
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
+        font-size: var(--font-md);
+        line-height: 140%;
+
+        transition: .2s ease;
+        white-space: nowrap;
+        text-decoration: none; 
+        cursor: pointer; 
+    }
+    &__link:hover{
+        background-color: var(--color-gray-hover);
+        color: var(--color-primary-hover)
+    }
+}

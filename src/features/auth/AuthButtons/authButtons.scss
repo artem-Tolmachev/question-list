@@ -1,0 +1,33 @@
+@use '../../../shared/styles/variables.scss' as *;
+
+.auth-buttons{
+    display: flex;
+    align-items: center;
+    gap: $space-sm-3;
+
+    &__login{
+        color: var(--color-primary);
+        font-size: var(--font-md);
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+    &__login:hover{
+        color: var(--color-primary-hover);
+    }
+    &__register{
+        padding: $space-sm $space-lg;
+        display: flex;
+        align-items: center;
+        height: 48px;
+        background-color: var(--color-primary);
+        color: white;
+        border-radius: 12px;
+        font-size: var(--font-lg);
+        font-weight: 500;
+        transition: 0.3s ease;
+    }
+    &__register:hover{
+        background-color: var(--color-primary-hover);
+    }
+}
+

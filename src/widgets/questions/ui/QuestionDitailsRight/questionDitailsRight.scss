@@ -1,0 +1,131 @@
+@use '../../../../shared/styles/global.scss' as *;
+@use '../../../../shared/styles/variables.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+
+.question-right{
+    @include flex-col();
+    min-width: 392px;
+    gap: $space-md-2;
+
+    &__item{
+        position: relative;
+        padding: $space-md-2;
+        border-radius: $space-md-2;
+        background-color: var(--color-white);
+        gap: $space-md-2;
+        @include flex-col();
+
+        &-title{
+            @include manrope(500, $font-md);
+            line-height: 120%;
+            color: var(--color-text);
+        }
+        &--primary{
+            border: 1px solid var(--color-primary);
+        }
+        &-guru{
+            gap: $space-sm-1;
+        }
+    }
+    &__level{
+        @include flex-col();
+        gap: $space-xs-4;
+        &-wr{
+            display: flex;
+            gap: $space-sm-3;
+        }
+        &-inf{
+            padding: 6px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #303030;
+            background-color: var(--color-gray-hover);
+            line-height: 120%;
+            gap: 12px;
+            font-family: "Manrope", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+        }
+        &-inf span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: var(--color-white);
+            line-height: 120%;
+            min-width: 17px;
+            background-color: var(--color-primary);
+        }
+    }
+    &__skills{
+        @include flex-col();
+        gap: $space-xs-4;
+
+        &-wr{
+            display: flex;
+            flex-wrap: wrap;
+            gap: $space-sm;
+        }
+    }
+    &__keywords{
+        @include flex-col();
+        gap: $space-xs-4;
+
+        &-wr{
+            display: flex;
+            flex-wrap: wrap;
+            gap: $font-sm;
+        }
+    }
+    &__word{
+        color: var(--color-primary);
+        line-height: 160%;
+        @include manrope(400, $font-md);
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        span{
+            color: var(--color-text-dunkle)
+        }
+        &-name{
+            color: var(--color-primary);
+        }
+    }
+    &__guru{
+        &-wr{
+            display: flex;
+            gap: $space-xs-4;
+        }
+        &-inf{
+            line-height: 130%;
+            @include manrope(500, $font-md);
+        }
+        &-skill{
+            color: #757575;
+        }
+        &-name{
+            color: var(--color-text);
+        }
+    }
+    &__descr{
+        color: var(--color-text);
+        line-height: 130%;
+        @include manrope(500, $font-md);
+    }
+    &__socials{
+        display: flex;
+        gap: $space-sm-1;
+    }
+}
+
+
+
+
+
+
+

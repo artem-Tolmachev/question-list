@@ -1,0 +1,35 @@
+@use '../../../shared/styles/global.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+@use '../../../shared/styles/mixins.scss' as *;
+
+.error-message{
+    display: flex;
+    flex-shrink: 1;
+    min-width: 0;
+    width: 100%;
+    @include flex-center-xy();
+    &__container{
+        align-items: center;
+        text-align: center;
+        gap: $font-sm;
+        @include flex-col();
+    }
+    &__title{
+        color: var(--color-text-dunkle);
+    }
+    &__btn{
+        padding: $font-xs; 
+        max-width: 200px;
+        border-radius: 8px;
+        background-color: var(--color-reset);
+        color: var(--color-white);
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+    &__btn:hover{
+        background-color: #b04d42;
+    }
+    &__text{
+        color: var(--color-reset);
+    }
+}

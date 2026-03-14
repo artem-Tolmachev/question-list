@@ -1,0 +1,10 @@
+@use '../../../../shared/styles/variables.scss' as *;
+
+.questions{
+    padding-top: $space-md-2;
+    display: flex;
+    flex-direction: column;
+    border-radius: $radius-2xl;
+    background-color: var(--color-white);
+    gap: $space-md-2;
+}

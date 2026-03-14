@@ -1,0 +1,35 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+
+.arrows{
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    @include flex-center-xy();
+    transition: hover .3s ease-in-out;
+    svg{
+        fill: var(--color-primary);
+    }
+    &:hover{
+        background-color: var(--color-border);
+    }
+    &:active{
+        border: 2px solid #6A0BFF;
+    }
+    &:disabled{
+        border: 2px solid var(--color-text-gray);
+    }
+    &:disabled:hover {
+        cursor: not-allowed;
+        background-color: transparent;
+    }
+    &:disabled svg{
+        fill: var(--color-text-gray);
+    }
+    &__hidden{
+        display: none;
+    }
+}

@@ -1,0 +1,72 @@
+@use '../../../../shared/styles//mixins.scss'  as *;
+@use '../../../../shared/styles/variables.scss'  as *;
+
+.answer{
+    display: flex;
+    flex-direction: column;
+    gap: $space-md-2;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out, height .3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    
+    &__content{
+        @include flex-col();
+        gap: $space-lg-5;
+    }
+    p{
+        margin: 0;
+        color: var(--color-text);
+        @include manrope(500, $font-md);
+    }
+    &__wr{
+        display: flex;
+        gap: $space-lg-5;
+    }
+    &__inf{
+        padding: $space-xs-3 $space-sm;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #303030;
+        background-color: var(--color-gray-hover);
+        line-height: 120%;
+        gap: $space-sm-1;
+        @include manrope(600, $font-sm);
+    }
+    &__inf span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $space-xs-1 $space-xs-2;
+        border-radius: 4px;
+        color: var(--color-white);
+        line-height: 120%;
+        min-width: 17px;
+        background-color: var(--color-primary);
+    }
+
+    &__details{
+        padding: 0px 10px;
+        margin-left: auto;
+        background-color: var(--color-white);
+        color: #6a0bff;
+        cursor: pointer;
+        @include flex-center-y();
+        
+        span{
+            padding: 5px 0;
+            color: #6a0bff;
+            transition: .3s ease-in-out;
+        }
+    }
+    &__details:hover{
+        color: var(--color-primary);
+    }
+}
+
+.answer__hidden{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}

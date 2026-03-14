@@ -1,0 +1,13 @@
+@use '../../../../shared/styles/mixins.scss' as *;
+@use '../../../../shared/styles/variables.scss' as *;
+
+.block-questions{
+    &__title{
+        margin: 0;
+        @include manrope(500, $font-2xl);
+    }
+    &__text{
+        border-bottom: 1px solid #E8E8E8;
+        padding-bottom: 17px;
+    }
+}

@@ -1,0 +1,18 @@
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/global.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.skeleton{
+  background: linear-gradient(-90deg, #adacac 0%, #d7d7d7 50%, #adacac 100%);
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -135% 0%;
+  }
+}

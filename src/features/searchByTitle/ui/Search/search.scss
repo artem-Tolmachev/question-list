@@ -1,0 +1,21 @@
+@use '../../../../shared/styles/variables.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+
+.searcher{
+    display: flex;
+    align-items: center;
+    padding: $space-sm-1 $space-md-2;
+    border-radius: 68px;
+    border: 1px solid var(--color-border);
+    
+    input{
+        padding: 0;
+        padding-left: $space-xs-4;
+        width: 100%;
+        border: none;
+        line-height: 130%;
+        outline: none;
+        @include manrope(400, $font-md);
+    }
+
+}

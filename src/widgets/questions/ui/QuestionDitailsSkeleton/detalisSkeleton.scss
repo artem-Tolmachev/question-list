@@ -1,0 +1,27 @@
+@use '../../../../shared/styles/global.scss' as *;
+@use '../../../../shared/styles/variables.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+
+.block-skeleton{
+    flex-grow: 1;
+    gap: $space-md-2;
+    @include flex-col();
+}
+
+.block-skeleton-right{
+    @include flex-col();
+    min-width: 392px;
+    gap: $space-md-2;
+    &__item{
+        padding: $space-md-2;
+        border-radius: $space-md-2;
+        background-color: var(--color-white);
+        gap: $space-md-2;
+        @include flex-col();
+    }
+    &__inner{
+        display: flex;
+        gap: $space-xs-4;
+        flex-wrap: wrap;
+    }
+}

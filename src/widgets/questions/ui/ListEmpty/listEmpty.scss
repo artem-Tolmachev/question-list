@@ -1,0 +1,19 @@
+@use '../../../../shared/styles/variables.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+@use '../../../../shared/styles/global.scss' as *;
+
+.emptyList{
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    @include flex-center-x;
+
+    &__content{
+        @include flex-col;
+        align-items: center;
+        text-align: center;
+    }
+    p{
+        margin-top: 20px;
+    }
+}

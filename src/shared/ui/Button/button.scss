@@ -1,0 +1,45 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/global.scss' as *;
+
+.button{
+    padding: $space-sm-1;
+    font-size: $space-sm-3;
+    line-height: 120%;
+
+    border-radius: $radius-xs;
+    background-color: var(--color-white);
+    cursor: pointer;
+    gap: $space-xs-3;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    @include flex-center-xy;
+    @include manrope(500, $font-md);
+
+    &__primary{
+        border: 1px solid var(--color-border);
+        color: var(--color-text-dunkle);
+    }
+    &__primary:hover{
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+    &__reset{
+        width: 240px;
+        border: 1px solid var(--color-reset);
+        color: var(--color-reset);
+    }
+    &__reset:hover{
+        border: 1px solid var(--color-reset);
+        background-color: var(--color-reset);
+        color: var(--color-white);
+    }
+    &__secondary{
+        padding: 10px;
+        border: 1px solid var(--color-primary);
+    }
+}
+.active{
+    border: 1px solid var(--color-primary-hover);
+}
+
+

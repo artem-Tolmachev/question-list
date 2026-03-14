@@ -1,0 +1,19 @@
+@use '../../../../shared/styles/mixins.scss' as *;
+@use '../../../../shared/styles/variables.scss' as *;
+
+.filters {
+    @include flex-col();
+    padding: $space-md-2;
+    min-width: 392px;
+    max-width: 392px;
+    border-radius: $radius-2xl;
+    background-color: var(--color-white);
+    gap: $space-md-2;
+
+}
+.filters-title{
+    @include manrope(400, $font-sm);
+    margin-bottom: 8px;
+    line-height: 120%;
+    color: var(--color-text)
+}

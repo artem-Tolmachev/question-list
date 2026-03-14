@@ -1,0 +1,18 @@
+@use '../../shared/styles/global.scss' as *;
+@use '../../shared/styles/variables.scss' as *;
+@use '../../shared/styles/mixins.scss' as *;
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    padding-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-gray-bg);
+    gap: $space-md;
+}
